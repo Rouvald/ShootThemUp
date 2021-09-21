@@ -10,6 +10,7 @@
 #include "Components//STUWeaponComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/Controller.h"
+#include "STUPlayerHUBWidget.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogBaseCharacter, All, All);
 
@@ -79,6 +80,8 @@ void ASTUBaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
     PlayerInputComponent->BindAction("Fire", IE_Released, WeaponComponent, &USTUWeaponComponent::StopFire);
     PlayerInputComponent->BindAction("NextWeapon", IE_Pressed, WeaponComponent, &USTUWeaponComponent::NextWeapon);
     PlayerInputComponent->BindAction("Reload", IE_Pressed, WeaponComponent, &USTUWeaponComponent::Reload);
+
+    //PlayerInputComponent->BindAction("HideUI", IE_Pressed, this, &ASTUBaseCharacter::HiddenUI);
 }
 
 void ASTUBaseCharacter::MoveForward(float Amount)
@@ -168,3 +171,12 @@ void ASTUBaseCharacter::OnGroundLanded(const FHitResult& Hit)
 
     UE_LOG(LogBaseCharacter, Display, TEXT("Player %s recived landed damage: %f"), *GetName(), FallDamage);
 }
+
+/*void ASTUBaseCharacter::HiddenUI()
+{
+    const auto HUDWidget = Cast<USTUPlayerHUBWidget>(GetOwner());
+
+    if (!HUDWidget) return;
+
+    HUDWidget->MakeHiddenUI();
+}*/

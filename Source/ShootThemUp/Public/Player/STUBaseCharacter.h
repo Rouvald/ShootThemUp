@@ -80,6 +80,8 @@ private:
     void OnDeath();
     void OnHealthChanged(float Health, float HealthDelta);
 
+    //void HiddenUI();
+
     UFUNCTION()
     void OnGroundLanded(const FHitResult& Hit);
 };

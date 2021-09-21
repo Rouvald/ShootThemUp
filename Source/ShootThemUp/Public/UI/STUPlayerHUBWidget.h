@@ -34,7 +34,9 @@ public:
     void OnTakeDamage();
 
     virtual bool Initialize() override;
-    
+
+    //void MakeHiddenUI();
+
 private:
     void OnHealthChanged(float Health, float HealthDelta);
 };

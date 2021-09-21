@@ -48,10 +48,11 @@ void ASTUBasePickup::NotifyActorBeginOverlap(AActor* OtherActor)
     Super::NotifyActorBeginOverlap(OtherActor);
 
     const auto Pawn = Cast<APawn>(OtherActor);
-    if (GivePickupTo(Pawn))
+    if (!GivePickupTo(Pawn))
     {
-        PickupWasTaken();
+        return;
     }
+    PickupWasTaken();
 }
 
 bool ASTUBasePickup::GivePickupTo(APawn* PlayerPawn)

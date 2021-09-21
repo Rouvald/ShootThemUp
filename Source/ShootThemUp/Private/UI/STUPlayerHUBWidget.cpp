@@ -59,3 +59,8 @@ bool USTUPlayerHUBWidget::IsPlayerSpectating() const
     const auto Controller = GetOwningPlayer();
     return Controller && Controller->GetStateName() == NAME_Spectating;
 }
+
+/*void USTUPlayerHUBWidget::MakeHiddenUI()
+{
+    this->SetVisibility(ESlateVisibility::Hidden);
+}*/
