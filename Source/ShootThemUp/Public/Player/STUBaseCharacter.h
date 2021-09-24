@@ -50,6 +50,8 @@ protected:
 
     virtual void BeginPlay() override;
 
+    virtual void OnDeath();
+
 public:
     virtual void Tick(float DeltaTime) override;
 
@@ -77,7 +79,6 @@ private:
 
     void OnCrouch();
 
-    void OnDeath();
     void OnHealthChanged(float Health, float HealthDelta);
 
     //void HiddenUI();

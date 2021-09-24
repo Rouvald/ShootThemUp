@@ -35,9 +35,11 @@ protected:
 public:
     virtual void Tick(float DeltaTime) override;
     virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
+    bool CouldBeTaken() const;
 
 private:
     FVector InitialPickupLocation;
+    FTimerHandle RespawnTimerHandle; 
 
     virtual bool GivePickupTo(APawn* PlayerPawn);
 

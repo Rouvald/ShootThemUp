@@ -67,7 +67,6 @@ void ASTUBasePickup::PickupWasTaken()
     {
         GetRootComponent()->SetVisibility(false, true);
     }
-    FTimerHandle RespawnTimerHandle;
     GetWorldTimerManager().SetTimer(RespawnTimerHandle, this, &ASTUBasePickup::Respawn, RespawnTime);
 }
 
@@ -123,4 +122,9 @@ void ASTUBasePickup::MovementSinZ()
                                 PickupMovement.MoveSinZ.Frequence * Time);
         SetActorLocation(CurrentLocation);
     }
+}
+
+bool ASTUBasePickup::CouldBeTaken() const
+{
+    return !GetWorldTimerManager().IsTimerActive(RespawnTimerHandle);
 }
