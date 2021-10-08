@@ -22,7 +22,7 @@ ASTUProjectile::ASTUProjectile()
     MovementComponent->InitialSpeed = 2000.0f;
     MovementComponent->ProjectileGravityScale = 0.0f;
 
-    WeaponFXComponent = CreateDefaultSubobject<USTUWeaponFXComponent>("weaponFXComponent");
+    WeaponFXComponent = CreateDefaultSubobject<USTUWeaponFXComponent>("WeaponFXComponent");
 }
 
 void ASTUProjectile::BeginPlay()
@@ -54,7 +54,7 @@ void ASTUProjectile::OnProjectileHit(
         GetActorLocation(),                         //
         DamageRadius,                               //
         UDamageType::StaticClass(),                 //
-        {/*GetOwner()*/},                           //
+        {/*GetOwner()*/},                         //
         this,                                       //
         GetController(),                            //
         DoFullDamage);                              //
