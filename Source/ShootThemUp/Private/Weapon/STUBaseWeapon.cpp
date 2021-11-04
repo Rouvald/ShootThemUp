@@ -41,14 +41,6 @@ void ASTUBaseWeapon::MakeShot()
 {
 }
 
-APlayerController* ASTUBaseWeapon::GetPlayerController() const
-{
-    const auto Player = Cast<ACharacter>(GetOwner());
-    if (!Player) return nullptr;
-
-    return Player->GetController<APlayerController>();
-}
-
 bool ASTUBaseWeapon::GetPlayerViewPoint(FVector& ViewLocation, FRotator& ViewRotation) const
 {
     const auto STUCharacter = Cast<ACharacter>(GetOwner());
@@ -56,7 +48,7 @@ bool ASTUBaseWeapon::GetPlayerViewPoint(FVector& ViewLocation, FRotator& ViewRot
 
     if (STUCharacter->IsPlayerControlled())
     {
-        const auto Controller = GetPlayerController();
+        const auto Controller = STUCharacter->GetController<APlayerController>();
         if (!Controller) return false;
 
         Controller->GetPlayerViewPoint(ViewLocation, ViewRotation);
@@ -153,8 +145,8 @@ void ASTUBaseWeapon::LogAmmo()
 
 bool ASTUBaseWeapon::IsAmmoFull() const
 {
-    return CurrentAmmo.Clips == DefaultAmmo.Clips; //&& //
-           //CurrentAmmo.Bullets == DefaultAmmo.Bullets;
+    return CurrentAmmo.Clips == DefaultAmmo.Clips; // &&
+    //CurrentAmmo.Bullets == DefaultAmmo.Bullets;
 }
 
 bool ASTUBaseWeapon::TryToAddAmmo(int32 ClipsAmount)
@@ -163,32 +155,26 @@ bool ASTUBaseWeapon::TryToAddAmmo(int32 ClipsAmount)
 
     if (IsAmmoEmpty())
     {
-        UE_LOG(LogBaseWeapon, Display, TEXT("Ammo was empty"));
-        CurrentAmmo.Clips = FMath::Clamp(ClipsAmount, 0, DefaultAmmo.Clips /*+ 1*/);
-        //OnClipEmpty.Broadcast(this);
+        CurrentAmmo.Clips = FMath::Clamp(ClipsAmount, 0, DefaultAmmo.Clips);
+        OnClipEmpty.Broadcast(this);
     }
     else if (CurrentAmmo.Clips < DefaultAmmo.Clips)
     {
         const auto NextClipsAmount = CurrentAmmo.Clips + ClipsAmount;
         if (DefaultAmmo.Clips - NextClipsAmount >= 0)
         {
-            UE_LOG(LogBaseWeapon, Display, TEXT("Clips were added"));
             CurrentAmmo.Clips = NextClipsAmount;
         }
         else
         {
-            UE_LOG(LogBaseWeapon, Display, TEXT("Ammo is full"));
-            CurrentAmmo.Clips = DefaultAmmo.Clips /*+ (CurrentAmmo.Bullets == DefaultAmmo.Bullets ? 0: 1)*/;
-            //OnClipEmpty.Broadcast(this);
-            /*CurrentAmmo.Bullets = DefaultAmmo.Bullets;*/
+            CurrentAmmo.Clips = DefaultAmmo.Clips;
+            //CurrentAmmo.Bullets = DefaultAmmo.Bullets;
         }
     }
-    /*else
+    /*
+    else
     {
-        UE_LOG(LogBaseWeapon, Display, TEXT("Bullet were added"));
-        //CurrentAmmo.Bullets = DefaultAmmo.Bullets;
-        //++CurrentAmmo.Clips;
-        //OnClipEmpty.Broadcast(this);
+        CurrentAmmo.Bullets = DefaultAmmo.Bullets;
     }*/
     return true;
 }
@@ -206,10 +192,10 @@ FText ASTUBaseWeapon::GetTextWeaponAmmoData() const
 
 UNiagaraComponent* ASTUBaseWeapon::SpawnMuzzleFX()
 {
-    return UNiagaraFunctionLibrary::SpawnSystemAttached(MuzzleFX,//
-        WeaponMesh,//
-        MuzzleSocketName,//
-        FVector::ZeroVector,//
-        FRotator::ZeroRotator,//
+    return UNiagaraFunctionLibrary::SpawnSystemAttached(MuzzleFX, //
+        WeaponMesh,                                               //
+        MuzzleSocketName,                                         //
+        FVector::ZeroVector,                                      //
+        FRotator::ZeroRotator,                                    //
         EAttachLocation::SnapToTarget, true);
 }

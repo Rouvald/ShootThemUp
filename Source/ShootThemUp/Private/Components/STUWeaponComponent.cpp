@@ -87,7 +87,6 @@ void USTUWeaponComponent::Equipweapon(int32 WeaponIndex)
     // CurrentReloadAnimMontage = WeaponData[WeaponIndex].ReloadAnimMontage;
     const auto CurrentWeaponData = WeaponData.FindByPredicate([&](const FWeaponData& Data)
     {
-        //
         return Data.WeaponClass == CurrentWeapon->GetClass(); //
     });
     CurrentReloadAnimMontage = CurrentWeaponData ? CurrentWeaponData->ReloadAnimMontage : nullptr;

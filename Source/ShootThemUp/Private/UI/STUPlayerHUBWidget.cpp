@@ -5,15 +5,25 @@
 #include "Components/STUWeaponComponent.h"
 #include "Components/STUHealthComponent.h"
 #include "STUUtils.h"
+#include "Player/STUBaseCharacter.h"
 
 bool USTUPlayerHUBWidget::Initialize()
 {
-    const auto HealthComponent = STUUtils::GetSTUPlayerComponent<USTUHealthComponent>(GetOwningPlayerPawn());
-    if (HealthComponent)
+    if (GetOwningPlayer())
+    {
+        GetOwningPlayer()->GetOnNewPawnNotifier().AddUObject(this, &USTUPlayerHUBWidget::OnNewPawn);
+        OnNewPawn(GetOwningPlayerPawn());
+    }
+    return Super::Initialize();
+}
+
+void USTUPlayerHUBWidget::OnNewPawn(APawn* NewPawn)
+{
+    const auto HealthComponent = STUUtils::GetSTUPlayerComponent<USTUHealthComponent>(NewPawn);
+    if (HealthComponent && !HealthComponent->OnHealthChanged.IsBoundToObject(this))
     {
         HealthComponent->OnHealthChanged.AddUObject(this, &USTUPlayerHUBWidget::OnHealthChanged);
     }
-    return Super::Initialize();
 }
 
 void USTUPlayerHUBWidget::OnHealthChanged(float Health, float HealthDelta)
@@ -23,6 +33,7 @@ void USTUPlayerHUBWidget::OnHealthChanged(float Health, float HealthDelta)
         OnTakeDamage();
     }
 }
+
 
 float USTUPlayerHUBWidget::GetHealthPercent() const
 {
@@ -59,8 +70,3 @@ bool USTUPlayerHUBWidget::IsPlayerSpectating() const
     const auto Controller = GetOwningPlayer();
     return Controller && Controller->GetStateName() == NAME_Spectating;
 }
-
-/*void USTUPlayerHUBWidget::MakeHiddenUI()
-{
-    this->SetVisibility(ESlateVisibility::Hidden);
-}*/

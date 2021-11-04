@@ -28,7 +28,7 @@ struct FAmmoData
 };
 
 // WeaponComponent
- 
+
 USTRUCT(BlueprintType)
 struct FWeaponData
 {
@@ -107,7 +107,7 @@ struct FPickupMovement
 
 class UNiagaraSystem;
 
-USTRUCT (BlueprintType)
+USTRUCT(BlueprintType)
 struct FDecalData
 {
     GENERATED_USTRUCT_BODY()
@@ -125,14 +125,39 @@ struct FDecalData
     float FadeOut = 1.0f;
 };
 
-USTRUCT (BlueprintType)
+USTRUCT(BlueprintType)
 struct FImpactData
 {
     GENERATED_USTRUCT_BODY()
-    
+
     UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "VFX")
     UNiagaraSystem* NiagaraEffect;
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "VFX")
     FDecalData DecalData;
+};
+
+
+USTRUCT(BlueprintType)
+struct FGameData
+{
+    GENERATED_USTRUCT_BODY()
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game", meta=(ClampMin = "1", ClampMax = "50"))
+    int32 PlayersNum = 2;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game", meta=(ClampMin = "1", ClampMax = "10"))
+    int32 RoundsNum = 4;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game", meta=(ClampMin = "3", ClampMax = "300"))
+    int32 RoundTime = 10; // in second
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+    FLinearColor DefaultTeamColor = FLinearColor::Red;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+    TArray<FLinearColor> TeamColors;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game", meta=(ClampMin = "3", ClampMax = "20"))
+    int32 RespawnTime = 5; // in second
 };
