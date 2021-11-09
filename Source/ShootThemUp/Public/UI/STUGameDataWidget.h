@@ -27,12 +27,6 @@ class SHOOTTHEMUP_API USTUGameDataWidget : public UUserWidget
     UFUNCTION(BlueprintCallable, Category="UI")
     int32 GetRoundTime() const;
 
-    UFUNCTION(BlueprintCallable, Category="UI")
-    int32 GetKillsNum() const;
-
-    UFUNCTION(BlueprintCallable, Category="UI")
-    int32 GetDeathsNum() const;
-
     private:
 
     ASTUGameModeBase* GetGameModeBase() const;

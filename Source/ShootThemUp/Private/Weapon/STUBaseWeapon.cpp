@@ -145,8 +145,8 @@ void ASTUBaseWeapon::LogAmmo()
 
 bool ASTUBaseWeapon::IsAmmoFull() const
 {
-    return CurrentAmmo.Clips == DefaultAmmo.Clips; // &&
-    //CurrentAmmo.Bullets == DefaultAmmo.Bullets;
+    return CurrentAmmo.Clips == DefaultAmmo.Clips &&
+           CurrentAmmo.Bullets == DefaultAmmo.Bullets;
 }
 
 bool ASTUBaseWeapon::TryToAddAmmo(int32 ClipsAmount)
@@ -155,7 +155,7 @@ bool ASTUBaseWeapon::TryToAddAmmo(int32 ClipsAmount)
 
     if (IsAmmoEmpty())
     {
-        CurrentAmmo.Clips = FMath::Clamp(ClipsAmount, 0, DefaultAmmo.Clips);
+        CurrentAmmo.Clips = FMath::Clamp(ClipsAmount, 0, DefaultAmmo.Clips + 1);
         OnClipEmpty.Broadcast(this);
     }
     else if (CurrentAmmo.Clips < DefaultAmmo.Clips)
@@ -168,14 +168,13 @@ bool ASTUBaseWeapon::TryToAddAmmo(int32 ClipsAmount)
         else
         {
             CurrentAmmo.Clips = DefaultAmmo.Clips;
-            //CurrentAmmo.Bullets = DefaultAmmo.Bullets;
+            CurrentAmmo.Bullets = DefaultAmmo.Bullets;
         }
     }
-    /*
     else
     {
         CurrentAmmo.Bullets = DefaultAmmo.Bullets;
-    }*/
+    }
     return true;
 }
 

@@ -20,16 +20,6 @@ int32 USTUGameDataWidget::GetRoundTime() const
     const auto GameMode = GetGameModeBase();
     return GameMode ? GameMode->GetRoundTime() : 0;
 }
-int32 USTUGameDataWidget::GetKillsNum() const
-{
-    const auto PlayerState = GetPlayerState();
-    return PlayerState ? PlayerState->GetKillsNum() : 0;
-}
-int32 USTUGameDataWidget::GetDeathsNum() const
-{
-    const auto PlayerState = GetPlayerState();
-    return PlayerState ? PlayerState->GetDeathsNum() : 0;
-}
 ASTUGameModeBase* USTUGameDataWidget::GetGameModeBase() const
 {
     return GetWorld() ? Cast<ASTUGameModeBase>(GetWorld()->GetAuthGameMode()): nullptr;

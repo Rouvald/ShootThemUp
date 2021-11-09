@@ -18,7 +18,7 @@ class SHOOTTHEMUP_API ASTUProjectile : public AActor
 public:
     ASTUProjectile();
 
-    void SetShotDiraction(const FVector& Diraction) { ShotDiraction = Diraction; }
+    void SetShotDirection(const FVector& Direction) { ShotDiraction = Direction; }
 
 protected:
     UPROPERTY(VisibleAnywhere, Category = "Weapon")

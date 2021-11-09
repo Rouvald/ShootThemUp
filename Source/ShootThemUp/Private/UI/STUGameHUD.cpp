@@ -2,9 +2,13 @@
 
 
 #include "UI/STUGameHUD.h"
-//#include "..\..\Public\UI\STUGameHUD.h" 
 #include "Engine/Canvas.h"
-#include "Blueprint/UserWidget.h"
+#include "UI/STUBaseWidget.h"
+#include "STUGameModeBase.h"
+
+
+DEFINE_LOG_CATEGORY_STATIC(LogSTUGameHUD, All, All);
+
 
 void ASTUGameHUD::DrawHUD()
 {
@@ -17,11 +21,46 @@ void ASTUGameHUD::BeginPlay()
 {
     Super::BeginPlay();
 
-    auto PlayerHUBWidget = CreateWidget<UUserWidget>(GetWorld(), PlayerHUDWidgetClass);
-    if (PlayerHUBWidget)
+    GameWidgets.Add(ESTUMatchState::InProgress, CreateWidget<USTUBaseWidget>(GetWorld(), PlayerHUDWidgetClass));
+    GameWidgets.Add(ESTUMatchState::Pause, CreateWidget<USTUBaseWidget>(GetWorld(), PauseWidgetClass));
+    GameWidgets.Add(ESTUMatchState::GameOver, CreateWidget<USTUBaseWidget>(GetWorld(), GameOverWidgetClass));
+
+    for (const auto GameWidget : GameWidgets)
     {
-        PlayerHUBWidget->AddToViewport();
+        const auto GameWidgetCreate = GameWidget.Value;
+        if(GameWidgetCreate)
+        {
+            GameWidgetCreate->AddToViewport();
+            GameWidgetCreate->SetVisibility(ESlateVisibility::Hidden);
+        }
     }
+
+    if(GetWorld())
+    {
+        const auto GameMode = Cast<ASTUGameModeBase>(GetWorld()->GetAuthGameMode());
+        if(GameMode)
+        {
+            GameMode->OnMatchStateChange.AddUObject(this, &ASTUGameHUD::OnGameStateChange);
+        }
+    }
+}
+
+void ASTUGameHUD::OnGameStateChange(ESTUMatchState NewState)
+{
+    if(CurrentWidget)
+    {
+        CurrentWidget->SetVisibility(ESlateVisibility::Hidden);
+    }
+    if(GameWidgets.Contains(NewState))
+    {
+        CurrentWidget = GameWidgets[NewState];
+    }
+    if(CurrentWidget)
+    {
+        CurrentWidget->SetVisibility(ESlateVisibility::Visible);
+        CurrentWidget->Show();
+    }
+    UE_LOG(LogSTUGameHUD, Display, TEXT("Match state is change: %s"), *UEnum::GetValueAsString(NewState));
 }
 
 

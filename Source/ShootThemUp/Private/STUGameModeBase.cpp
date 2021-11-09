@@ -30,6 +30,7 @@ void ASTUGameModeBase::StartPlay()
     CreateTeamsInfo();
     CurrentRound = 1;
     StartRound();
+    SetMatchState(ESTUMatchState::InProgress);
 }
 
 UClass* ASTUGameModeBase::GetDefaultPawnClassForController_Implementation(AController* InController)
@@ -108,6 +109,7 @@ void ASTUGameModeBase::CreateTeamsInfo()
     if (!GetWorld()) return;
 
     int32 TeamID = 1;
+    int32 BotNameValue = 1;
     for (auto It = GetWorld()->GetControllerIterator(); It; ++It)
     {
         const auto Controller = It->Get();
@@ -118,6 +120,7 @@ void ASTUGameModeBase::CreateTeamsInfo()
 
         PlayerState->SetTeamId(TeamID);
         PlayerState->SetTeamColor(DetermineColorByTeamID(TeamID));
+        PlayerState->SetPlayerName(Controller->IsPlayerController() ? "Player" : "Bot_" + FString::FromInt(BotNameValue++));
         SetPlayerColor(Controller);
 
         TeamID = TeamID == 1 ? 2 : 1;
@@ -153,7 +156,7 @@ void ASTUGameModeBase::Killed(AController* KillerController, AController* Victim
     const auto KillerPlayerState = KillerController ? KillerController->GetPlayerState<ASTUPlayerState>() : nullptr;
     const auto VictimPlayerState = VictimController ? VictimController->GetPlayerState<ASTUPlayerState>() : nullptr;
 
-    if (KillerPlayerState)
+    if (KillerPlayerState && KillerPlayerState->GetTeamId() != VictimPlayerState->GetTeamId())
     {
         KillerPlayerState->AddKill();
     }
@@ -183,7 +186,7 @@ void ASTUGameModeBase::StartRespawn(AController* Controller) const
 {
     const bool RespawnAvailable = RoundCountDown > MinRespawnTime + GameData.RespawnTime;
     if (!RespawnAvailable) return;
-    
+
     const auto RespawnComponents = STUUtils::GetSTUPlayerComponent<USTURespawnComponent>(Controller);
     if (!RespawnComponents) return;
 
@@ -197,9 +200,9 @@ void ASTUGameModeBase::RespawnRequest(AController* Controller)
 
 void ASTUGameModeBase::GameOver()
 {
-    for(const auto Pawn : TActorRange<APawn>(GetWorld()))
+    for (const auto Pawn : TActorRange<APawn>(GetWorld()))
     {
-        if(Pawn)
+        if (Pawn)
         {
             Pawn->TurnOff();
             Pawn->DisableInput(nullptr);
@@ -207,4 +210,38 @@ void ASTUGameModeBase::GameOver()
     }
     UE_LOG(LogBaseGameMode, Display, TEXT("==========GAME OVER=========="));
     LogPlayerInfo();
+
+    SetMatchState(ESTUMatchState::GameOver);
+}
+
+void ASTUGameModeBase::SetMatchState(ESTUMatchState NewState)
+{
+    if (NewState == MatchState) return;
+
+    MatchState = NewState;
+    OnMatchStateChange.Broadcast(MatchState);
+}
+
+bool ASTUGameModeBase::SetPause(APlayerController* PC, FCanUnpause CanUnpauseDelegate)
+{
+    const auto PauseSet = Super::SetPause(PC, CanUnpauseDelegate);
+
+    if (PauseSet)
+    {
+        SetMatchState(ESTUMatchState::Pause);
+    }
+
+    return PauseSet;
+}
+
+bool ASTUGameModeBase::ClearPause()
+{
+    const auto PauseClear = Super::ClearPause();
+
+    if (PauseClear)
+    {
+        SetMatchState(ESTUMatchState::InProgress);
+    }
+
+    return PauseClear;
 }

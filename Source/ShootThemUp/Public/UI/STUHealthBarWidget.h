@@ -1,0 +1,36 @@
+// Shoot Them Up. All Rights Recerved
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Blueprint/UserWidget.h"
+#include "STUHealthBarWidget.generated.h"
+
+class UProgressBar;
+/**
+ * 
+ */
+UCLASS()
+class SHOOTTHEMUP_API USTUHealthBarWidget : public UUserWidget
+{
+    GENERATED_BODY()
+
+public:
+    void SetHealthPercent(float HealthPercent);
+
+protected:
+    UPROPERTY(meta=(Bindwidget))
+    UProgressBar* HealthProgressBar;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="UI")
+    float PercentVisibilityThreshold = 0.8f;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="UI")
+    float PercentColorThreshold = 0.3f;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="UI")
+    FLinearColor GoodColor = FLinearColor::White;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="UI")
+    FLinearColor BadColor = FLinearColor::Red;
+};

@@ -54,7 +54,7 @@ protected:
 
     bool CanEquip() const;
     bool CanFire() const;
-    void Equipweapon(int32 WeaponIndex);
+    void EquipWeapon(int32 WeaponIndex);
     
 private:
     UPROPERTY()

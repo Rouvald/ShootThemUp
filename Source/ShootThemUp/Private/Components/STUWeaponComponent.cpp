@@ -25,7 +25,7 @@ void USTUWeaponComponent::BeginPlay()
     CurrentWeaponIndex = 0;
     InitAnimation();
     SpawnWeapons();
-    Equipweapon(CurrentWeaponIndex);
+    EquipWeapon(CurrentWeaponIndex);
 }
 
 void USTUWeaponComponent::EndPlay(const EEndPlayReason::Type EndPlayReason)
@@ -67,7 +67,7 @@ void USTUWeaponComponent::AttachWeaponToSocket(ASTUBaseWeapon* Weapon, USceneCom
     Weapon->AttachToComponent(SceneComponent, AttachmentRules, SocketName);
 }
 
-void USTUWeaponComponent::Equipweapon(int32 WeaponIndex)
+void USTUWeaponComponent::EquipWeapon(int32 WeaponIndex)
 {
     if (WeaponIndex < 0 || WeaponIndex >= Weapons.Num())
     {
@@ -111,7 +111,7 @@ void USTUWeaponComponent::NextWeapon()
 {
     if (!CanEquip()) return;
     CurrentWeaponIndex = (++CurrentWeaponIndex) % Weapons.Num();
-    Equipweapon(CurrentWeaponIndex);
+    EquipWeapon(CurrentWeaponIndex);
 }
 
 void USTUWeaponComponent::PlayAnimMontage(UAnimMontage* Animation)

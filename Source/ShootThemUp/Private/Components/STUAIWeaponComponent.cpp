@@ -32,6 +32,6 @@ void USTUAIWeaponComponent::NextWeapon()
     if (CurrentWeaponIndex != NextIndex)
     {
         CurrentWeaponIndex = NextIndex;
-        Equipweapon(CurrentWeaponIndex);
+        EquipWeapon(CurrentWeaponIndex);
     }
 }

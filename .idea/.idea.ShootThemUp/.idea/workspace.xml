@@ -6,105 +6,123 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb8df85d-e65f-45bc-ba5f-6eb6b6c6ebeb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Player/BP_STUPlayerCharacter.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/WBP_GameData.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/WBP_Spectating.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STURespawnComponent.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUPlayerCharacter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUPlayerState.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameDataWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUSpectatorWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STURespawnComponent.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUPlayerCharacter.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUPlayerState.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameDataWidget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUSpectatorWidget.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/BP_STUGameInstance.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Menu/BP_STUMenuGameModeBase.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Menu/MenuLevel.umap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Menu/NE_MenuSmoke.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Menu/UI/BP_STUMenuHUD.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Menu/UI/WBP_LevelItem.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Menu/UI/WBP_StartMenu.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Menu/images/Frame.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Fonts/BarlowCondensed-Regular.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Fonts/BarlowCondensed-Regular_Font.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Fonts/BarlowCondensed-SemiBold.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Fonts/BarlowCondensed-SemiBold_Font.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Fonts/Morganite-Black.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Fonts/Morganite-Black_Font.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/Cross.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/Ellipse.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/Health.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/Launcher.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/LauncherCrossHair.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/LauncherMainIcon.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/LeftButton.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/LeftButtonOver.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/Riffle.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/RifleCrossHair.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/RifleMainIcon.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/RightButton.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/RightButtonOver.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/Sample.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/Weapon.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/WBP_GameOver.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/WBP_GamePause.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/WBP_HealthBarWidget.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/WBP_PlayerStatRow.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Ui/WBP_PlayerStatRowTitle.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/STUMenuGameModeBase.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/STUMenuPlayerController.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/UI/STULevelItemWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/UI/STUMenuHUD.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/UI/STUMenuWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameInstance.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUBaseWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameOverWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGoToMenuWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUHealthBarWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPauseWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPlayerStatRowWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/STUMenuGameModeBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/STUMenuPlayerController.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/UI/STULevelItemWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/UI/STUMenuHUD.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/UI/STUMenuWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUGameInstance.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUBaseWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameOverWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGoToMenuWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUHealthBarWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPauseWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPlayerStatRowWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp.lib" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp.lib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0001.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0001.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0002.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0002.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0002.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0003.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0003.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0003.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0004.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0002.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0003.pdb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0004.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0004.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0005.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0005.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0006.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0006.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0008.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0008.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0009.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0009.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0010.pdb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0011.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0011.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0012.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0012.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0013.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0013.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0014.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0014.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0015.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0015.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0016.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0016.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0017.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0017.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-1003.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-1003.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-1056.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-1056.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-1693.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-1693.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-2531.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-2531.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-2984.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-2984.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-3618.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-3618.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-4042.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-6287.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-6287.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-6692.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-6692.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-6724.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-6724.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-8027.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-8619.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-8619.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-9841.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-9841.pdb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor.modules" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor.modules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/AI/BP_STUAICharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BP_STUAICharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/BT_STUAICharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BT_STUAICharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/JumpEnd.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/JumpEnd.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/TestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/TestLevel.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/TestLevel_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/TestLevel_BuiltData.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/PickUps/BP_STUAmmoPickup.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PickUps/BP_STUAmmoPickup.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/ABP_BaseCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/ABP_BaseCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/AM_Equip.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/AM_Equip.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUBaseCharacter.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/AM_LauncherReload.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/AM_LauncherReload.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/AM_RifleReload.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/AM_RifleReload.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUPlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_STUPlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Ui/BP_STUGameHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Ui/BP_STUGameHUD.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Ui/WBP_GameData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Ui/WBP_GameData.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Ui/WBP_PlayerHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Ui/WBP_PlayerHUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Ui/WBP_SpectatingHUD.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Ui/WBP_Spectating.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Ui/WBP_Spectating.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VFX/Rifle/Trace/NE_RifleTrace.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/Rifle/Trace/NE_RifleTrace.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Weapon/BP_STULauncherWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapon/BP_STULauncherWeapon.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Weapon/BP_STURifleWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapon/BP_STURifleWeapon.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAICharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAICharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAIController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAIController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUAIPerceptionComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUAIPerceptionComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUCharacterMovementComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUCharacterMovementComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUHealthComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUHealthComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUAIWeaponComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUAIWeaponComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUWeaponComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUWeaponComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUBaseCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUBaseCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/PickUps/STUBasePickup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/PickUps/STUBasePickup.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUPlayerController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameModeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameModeBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameDataWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameDataWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameHUD.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPlayerHUBWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPlayerHUBWidget.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUBaseWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUBaseWeapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STURifleWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STURifleWeapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAIController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAIController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUHealthComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUHealthComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STULauncherWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STULauncherWeapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAICharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAICharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUWeaponComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUWeaponComponent.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUBaseCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUBaseCharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUPlayerController.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUCoreTypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUCoreTypes.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUGameModeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUGameModeBase.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameDataWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameDataWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameHUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameHUD.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPlayerHUBWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPlayerHUBWidget.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUBaseWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUBaseWeapon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STURifleWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STURifleWeapon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUProjectile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUProjectile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/ShootThemUp.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/ShootThemUp.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +141,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Source/ShootThemUp/Public/STUGameInstance.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/um/codecapi.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1zeJJqto7BUX1ebRuSyJlxf1ylw" />
@@ -372,7 +391,18 @@
       <workItem from="1635858275160" duration="8211000" />
       <workItem from="1635955927902" duration="3878000" />
       <workItem from="1635961735867" duration="911000" />
-      <workItem from="1636010390165" duration="7437000" />
+      <workItem from="1636010390165" duration="7918000" />
+      <workItem from="1636113322840" duration="7420000" />
+      <workItem from="1636208932500" duration="10196000" />
+      <workItem from="1636229827823" duration="639000" />
+      <workItem from="1636305677900" duration="3961000" />
+      <workItem from="1636324402477" duration="2102000" />
+      <workItem from="1636326708036" duration="414000" />
+      <workItem from="1636370712860" duration="4883000" />
+      <workItem from="1636392839719" duration="3799000" />
+      <workItem from="1636408554853" duration="2177000" />
+      <workItem from="1636456472293" duration="2930000" />
+      <workItem from="1636470210420" duration="4060000" />
     </task>
     <servers />
   </component>
