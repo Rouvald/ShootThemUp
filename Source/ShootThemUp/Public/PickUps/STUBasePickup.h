@@ -9,6 +9,7 @@
 #include "STUBasePickup.generated.h"
 
 class USphereComponent;
+class USoundCue;
 
 
 UCLASS()
@@ -29,6 +30,9 @@ protected:
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category= "PickupMovement")
     FPickupMovement PickupMovement;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Sound")
+    USoundCue* PickupTakenSound;
 
     virtual void BeginPlay() override;
 

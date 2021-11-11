@@ -6,123 +6,361 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb8df85d-e65f-45bc-ba5f-6eb6b6c6ebeb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/BP_STUGameInstance.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Menu/BP_STUMenuGameModeBase.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Menu/MenuLevel.umap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Menu/NE_MenuSmoke.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Menu/UI/BP_STUMenuHUD.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Menu/UI/WBP_LevelItem.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Menu/UI/WBP_StartMenu.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Menu/images/Frame.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Fonts/BarlowCondensed-Regular.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Fonts/BarlowCondensed-Regular_Font.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Fonts/BarlowCondensed-SemiBold.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Fonts/BarlowCondensed-SemiBold_Font.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Fonts/Morganite-Black.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Fonts/Morganite-Black_Font.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/Cross.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/Ellipse.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/Health.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/Launcher.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/LauncherCrossHair.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/LauncherMainIcon.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/LeftButton.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/LeftButtonOver.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/Riffle.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/RifleCrossHair.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/RifleMainIcon.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/RightButton.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/RightButtonOver.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/Sample.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/Images/Weapon.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/WBP_GameOver.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/WBP_GamePause.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/WBP_HealthBarWidget.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/WBP_PlayerStatRow.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Ui/WBP_PlayerStatRowTitle.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/STUMenuGameModeBase.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/STUMenuPlayerController.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/UI/STULevelItemWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/UI/STUMenuHUD.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/UI/STUMenuWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameInstance.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUBaseWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameOverWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGoToMenuWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUHealthBarWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPauseWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPlayerStatRowWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/STUMenuGameModeBase.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/STUMenuPlayerController.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/UI/STULevelItemWidget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/UI/STUMenuHUD.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/UI/STUMenuWidget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUGameInstance.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUBaseWidget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameOverWidget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGoToMenuWidget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUHealthBarWidget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPauseWidget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPlayerStatRowWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/AmbientLoops/Air_Wind/wav/sw_Amb_Wind_LP.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/AmbientLoops/Amb_Bed/wav/sw_Amb_Bed_HighRise_Atrium_LP.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/AmbientLoops/Amb_Bed/wav/sw_Amb_Bed_HighRise_Room_LP.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/AmbientLoops/Amb_Bed/wav/sw_Amb_Bed_Sanctuary_LP.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/AmbientLoops/Env_Objects/wav/sw_Amb_Fence_LP.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/AmbientLoops/Env_Objects/wav/sw_Amb_PhoneBox_LP.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/AmbientLoops/Env_Objects/wav/sw_Amb_UnrealMarquee_LP.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/Air_Wind/wav/sx_Amb_WindGust_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/Air_Wind/wav/sx_Amb_WindGust_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/Air_Wind/wav/sx_Amb_WindGust_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/Air_Wind/wav/sx_Amb_WindGust_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/Air_Wind/wav/sx_Amb_WindGust_05.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/Air_Wind/wav/sx_Amb_WindGust_06.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/Air_Wind/wav/sx_Amb_WindGust_07.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/Air_Wind/wav/sx_Amb_WindGust_08.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_05.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_06.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_07.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_08.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_09.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_10.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_11.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_12.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_13.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_14.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_15.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_16.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_17.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_18.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_19.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_20.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_21.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_22.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_23.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_24.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_25.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_26.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_27.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_28.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_29.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Ambient_OneShots/wav/sw_Amb_OS_30.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Audio_Settings/Attenuation/Ambient_OneShot.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Audio_Settings/Attenuation/BulletImpacts.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Audio_Settings/Attenuation/Explosion.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Audio_Settings/Attenuation/Foley.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Audio_Settings/Attenuation/Footsteps.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Audio_Settings/Attenuation/Pickups.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Audio_Settings/Attenuation/Projectile.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Audio_Settings/Attenuation/SA_Kiosk.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Audio_Settings/Attenuation/Wep_Shoot.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Audio_Settings/Attenuation/Wind_Balcony.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Audio_Settings/Submixes/VibrationSubmix.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Aim_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Bodyfall_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Bodyfall_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_JumpLand_Grass_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_JumpLand_Grass_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_JumpLand_Grass_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_JumpLand_Metal_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_JumpLand_Metal_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_JumpLand_Metal_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_JumpLand_Tile_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_JumpLand_Tile_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_JumpLand_Tile_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Jump_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Jump_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Jump_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Run_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Run_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Run_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Run_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Run_05.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Run_06.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Run_07.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Run_08.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Run_09.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Foley/wav/sw_Foley_Run_10.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Grass_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Grass_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Grass_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Grass_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Grass_05.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Grass_06.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Grass_07.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Grass_08.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Grass_09.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Grass_10.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Metal_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Metal_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Metal_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Metal_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Metal_05.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Metal_06.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Metal_07.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Metal_08.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Metal_09.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Metal_10.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Tile_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Tile_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Tile_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Tile_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Tile_05.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Tile_06.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Tile_07.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Tile_08.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Tile_09.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Footsteps/wav/sw_FS_Tile_10.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_05.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_06.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_07.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_08.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_09.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_10.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_11.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_12.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_13.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_14.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_15.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Default_16.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Flesh_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Flesh_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Flesh_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Flesh_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Flesh_05.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Flesh_06.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Flesh_07.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Flesh_08.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Flesh_09.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Flesh_10.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_05.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_06.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_07.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_08.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_09.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_10.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_11.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_12.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_13.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_14.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_15.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Mtl_16.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Water_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Water_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Water_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Water_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Water_05.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Water_06.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Water_07.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Water_08.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Water_09.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_AK_Water_10.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_Launcher_Close_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_Launcher_Close_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_Launcher_Close_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_Launcher_Close_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_Launcher_Close_05.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_Launcher_Dist_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_Launcher_Dist_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_Launcher_Dist_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_Launcher_Dist_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Impacts/wav/sw_Impt_Launcher_Dist_05.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Pickups/wav/sw_Pickup_Ammo.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Pickups/wav/sw_Pickup_Health.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Projectiles/wav/sw_Proj_Flight_LP_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Projectiles/wav/sw_Proj_Flight_LP_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Projectiles/wav/sw_Proj_Flight_LP_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Projectiles/wav/sw_Proj_Flight_LP_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Stingers/wav/sw_Sting_PlayerDeath.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Stingers/wav/sw_Sting_Respawn.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/UI/wav/sw_UI_Back.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/UI/wav/sw_UI_GameExit.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/UI/wav/sw_UI_GameStart.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/UI/wav/sw_UI_Hover.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/UI/wav/sw_UI_Message_Rx.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/UI/wav/sw_UI_Message_Tx.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/UI/wav/sw_UI_Open.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/UI/wav/sw_UI_Select.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/UI/wav/sw_UI_Toggle.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Equip_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Equip_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Equip_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Shoot_3D_LP_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Shoot_3D_LP_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Shoot_3D_LP_Dist_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Shoot_3D_LP_Dist_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Shoot_3D_LP_Dist_End_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Shoot_3D_LP_Dist_End_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Shoot_3D_LP_End_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Shoot_3D_LP_End_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Shoot_LP_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Shoot_LP_End_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Shoot_LP_End_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_AR_Shoot_LP_End_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/AssultRifle/wav/sw_Wep_Reload_AR.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Dryfire_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Dryfire_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Dryfire_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Shoot_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Shoot_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Shoot_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Shoot_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Shoot_3D_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Shoot_3D_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Shoot_3D_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Shoot_3D_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Shoot_3D_Dist_01.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Shoot_3D_Dist_02.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Shoot_3D_Dist_03.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Launcher_Shoot_3D_Dist_04.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Reload_Launcher_End.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/ExternalContent/Sounds/Weapons/GrenadeLauncher/wav/sw_Wep_Reload_Launcher_Start.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Character/SCue_CharacterDeath.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Character/SCue_JumpEnd.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Character/SCue_JumpStart.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Character/SCue_Run.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Character/SCue_Walk.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/PickUps/SCue_AmmoPickup.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/PickUps/SCue_HealthPickup.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/SoundClasses/SC_Character.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/SoundClasses/SC_Master.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/SoundClasses/SC_Pickups.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/SoundClasses/SC_UI.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/SoundClasses/SC_Weapon.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/UI/SCue_ButtonHovered.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/UI/SCue_ButtonPressed.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/UI/SCue_GameStart.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/UI/SCue_WidgetOpen.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Weapons/Launcher/SCue_Reload_End_Launcher.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Weapons/Launcher/SCue_Reload_Start_Launcher.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Weapons/Launcher/SCue_ShootNoAmmo_Launcher.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Weapons/Launcher/SCue_Shoot_Launcher.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Weapons/Projectile/SCue_Projectile.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Weapons/Rifle/SCue_Shoot_Rifle.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Weapons/Rifle/SCue_reload_Rifle.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Weapons/SCue_WeaponEquip.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NS_Launcher__Impact.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Sound/STUSoundFuncLib.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Sound/STUSoundFuncLib.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0001.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0001.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0002.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0003.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0004.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0004.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0005.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0005.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0006.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0006.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0008.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0008.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0009.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0009.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0011.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0011.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0012.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0012.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0013.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0013.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0014.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0014.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0015.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0015.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0017.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp-0017.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-ShootThemUp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/AI/BP_STUAICharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BP_STUAICharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/AI/BT_STUAICharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BT_STUAICharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_STUGameInstance.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_STUGameInstance.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/Energy/M_Electrical.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/Energy/M_WP_ShockRifle_Ring.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/Explosion/M_explosion_subUV.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/LensFlare/M_LensFlare_02.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/LensFlare/M_Lensflare_01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/Ramp/M_SoftGradient_Muzzle.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/Ramp/M_radial_ramp_soft.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/Smoke/M_ImpactSmoke.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/Smoke/M_MuzzleSmokeDetail_GPU.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/Smoke/M_SmokeBall.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/Weapon/M_MuzzleGlow.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/Weapon/M_WP_LinkGun_MF_3_new.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/Weapon/M_WP_Linkgun_Connection.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/Weapon/M_WP_ShockRifle_Panning_Beam.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/Weapon/M_muzzle_flash_subUV.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Materials/spark/M_spark_subUV.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Meshes/Weapon/SM_MuzzleCone.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/ParticleSystems/Weapons/AssaultRifle/Impacts/P_AssaultRifle_IH.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/ParticleSystems/Weapons/AssaultRifle/Muzzle/P_AssaultRifle_MF.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/ParticleSystems/Weapons/AssaultRifle/Muzzle/P_AssaultRifle_Trail.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/ParticleSystems/Weapons/RocketLauncher/Impact/P_Launcher_IH.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/ParticleSystems/Weapons/RocketLauncher/Muzzle/P_Launcher_MF.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/ParticleSystems/Weapons/RocketLauncher/Muzzle/P_Launcher_proj.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Energy/T_EFX_Beam_Electricity_02.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Energy/T_EFX_Energy_Arc_SubUV.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Energy/T_EFX_Energy_Loop_Free.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/LensFlare/Flare_02.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/LensFlare/T_Lensflare_01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Mask/T_SquareMaskTightEdge.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Noise/T_FX_RoilingFlameModulate.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Noise/T_TileNoise.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Ramp/T_FX_CameraDistort.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Ramp/T_FX_ColorDistort.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Smoke/T_Clouds_01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Smoke/T_SmokeBall_01_8_8.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Spark/T_SparkCore_2X2.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Water/T_Caustics_2.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Water/T_Steam_02_Packed.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Weapon/T_Coil.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/Weapon/T_muzzle_flashes.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Effects/Textures/fire/T_explo_SubUV.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/Equip.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/Equip.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/JumpEnd.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/JumpEnd.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/JumpStart.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/JumpStart.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/Launcher_Reload.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/Launcher_Reload.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/Reload.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/Reload.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/RoadieRun_Fwd.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/RoadieRun_Fwd.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/Run_Bwd.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/Run_Bwd.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/Run_Fwd.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/Run_Fwd.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/Run_Lt.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/Run_Lt.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/Run_Rt.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ExternalContent/Animations/TTP_Animations/Run_Rt.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/TestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/TestLevel.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/TestLevel_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/TestLevel_BuiltData.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/AM_LauncherReload.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/AM_LauncherReload.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/AM_RifleReload.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/AM_RifleReload.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Menu/MenuLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Menu/MenuLevel.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Menu/UI/WBP_LevelItem.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Menu/UI/WBP_LevelItem.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Menu/UI/WBP_StartMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Menu/UI/WBP_StartMenu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/PickUps/BP_STUAmmoPickup.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PickUps/BP_STUAmmoPickup.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/PickUps/BP_STUHealthPickup.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/PickUps/BP_STUHealthPickup.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUPlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_STUPlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Ui/BP_STUGameHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Ui/BP_STUGameHUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Ui/WBP_GameData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Ui/WBP_GameData.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Ui/WBP_PlayerHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Ui/WBP_PlayerHUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Ui/WBP_Spectating.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Ui/WBP_Spectating.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/Rifle/Trace/NE_RifleTrace.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/Rifle/Trace/NE_RifleTrace.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_STUPlayerController.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Ui/WBP_GameOver.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Ui/WBP_GameOver.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Ui/WBP_GamePause.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Ui/WBP_GamePause.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Ui/WBP_GoToMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Ui/WBP_GoToMenu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NE_Bright_Flash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NE_Bright_Flash.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NE_Burst_Out.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NE_Burst_Out.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NE_CoreLightning.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NE_CoreLightning.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NE_Fireball.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NE_Fireball.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NE_Flare.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NE_Flare.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NE_Lingering_Smoke.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NE_Lingering_Smoke.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NS_Launcher_Impact.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/Launcher/Impact/NS_Launcher_Impact.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Weapon/BP_STULauncherWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapon/BP_STULauncherWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Weapon/BP_STUProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapon/BP_STUProjectile.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Weapon/BP_STURifleWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapon/BP_STURifleWeapon.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAICharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAICharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUAIWeaponComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUAIWeaponComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUWeaponComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUWeaponComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/UI/STUMenuWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/UI/STUMenuWidget.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/PickUps/STUBasePickup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/PickUps/STUBasePickup.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUBaseCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUBaseCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameInstance.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameModeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameModeBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameDataWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameDataWidget.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameHUD.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPlayerHUBWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPlayerHUBWidget.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUBaseWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUBaseWeapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUBaseWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUBaseWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/Components/STUWeaponFXComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/Components/STUWeaponFXComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STULauncherWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STULauncherWeapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAICharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAICharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUWeaponComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUWeaponComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STURifleWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STURifleWeapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/UI/STUMenuWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/UI/STUMenuWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/PickUps/STUBasePickup.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/PickUps/STUBasePickup.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUBaseCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUBaseCharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUPlayerController.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUCoreTypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUCoreTypes.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUGameModeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUGameModeBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUUtils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameDataWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameDataWidget.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameHUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameHUD.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPlayerHUBWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPlayerHUBWidget.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUProjectile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUProjectile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUGameInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUGameInstance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUBaseWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUBaseWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUBaseWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUBaseWeapon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STULauncherWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STULauncherWeapon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STURifleWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STURifleWeapon.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/ShootThemUp.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/ShootThemUp.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -403,6 +641,10 @@
       <workItem from="1636408554853" duration="2177000" />
       <workItem from="1636456472293" duration="2930000" />
       <workItem from="1636470210420" duration="4060000" />
+      <workItem from="1636552758824" duration="3283000" />
+      <workItem from="1636563274783" duration="2810000" />
+      <workItem from="1636574685556" duration="4044000" />
+      <workItem from="1636585852046" duration="595000" />
     </task>
     <servers />
   </component>

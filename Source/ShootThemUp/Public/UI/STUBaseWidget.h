@@ -6,6 +6,8 @@
 #include "Blueprint/UserWidget.h"
 #include "STUBaseWidget.generated.h"
 
+
+class USoundCue;
 /**
  * 
  */
@@ -20,4 +22,7 @@ class SHOOTTHEMUP_API USTUBaseWidget : public UUserWidget
     protected:
     UPROPERTY(meta=(BindWidgetAnim), Transient)
     UWidgetAnimation* ShowAnimation;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="UI")
+    USoundCue* OpenWidgetSound;
 };
