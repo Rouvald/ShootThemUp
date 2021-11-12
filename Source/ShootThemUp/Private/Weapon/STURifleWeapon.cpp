@@ -6,6 +6,7 @@
 #include "Weapon/Components/STUWeaponFXComponent.h"
 #include "NiagaraComponent.h"
 #include "NiagaraFunctionLibrary.h"
+#include "STUPlayerController.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundCue.h"
 #include "Components/AudioComponent.h"
@@ -60,15 +61,15 @@ void ASTURifleWeapon::MakeShot()
         MakeDamage(HitResult);
         //DrawDebugLine(GetWorld(), GetMuzzleworldLocation(), HitResult.ImpactPoint, FColor::Red, false, 3.0f, 0, 3.0f);
         //DrawDebugSphere(GetWorld(), HitResult.ImpactPoint, 10.0f, 32, FColor::Red, false, 5.0f);
-         /*UGameplayStatics::ApplyPointDamage(
-            HitResult.GetActor(), Damage, HitResult.ImpactPoint, HitResult, GetPlayerController(), GetOwner(), nullptr);*/
+        /*UGameplayStatics::ApplyPointDamage(
+           HitResult.GetActor(), Damage, HitResult.ImpactPoint, HitResult, GetPlayerController(), GetOwner(), nullptr);*/
         WeaponFXComponent->PlayImpactFX(HitResult);
     }
     /*else
     {
         DrawDebugLine(GetWorld(), GetMuzzleworldLocation(), TraceEnd, FColor::Red, false, 3.0f, 0, 3.0f);
     }*/
-    SpawnTraceFX(GetMuzzleworldLocation(), TraceFXEnd);
+    SpawnTraceFX(GetMuzzleWorldLocation(), TraceFXEnd);
     DecreaseAmmo();
 }
 
@@ -90,37 +91,39 @@ void ASTURifleWeapon::MakeDamage(FHitResult& HitResult)
     const auto DamagedActor = HitResult.GetActor();
     if (!DamagedActor) return;
 
-    DamagedActor->TakeDamage(Damage, FDamageEvent(), GetController(), this);
+    FPointDamageEvent PointDamageEvent;
+    PointDamageEvent.HitInfo = HitResult;
+    DamagedActor->TakeDamage(Damage, PointDamageEvent, GetController(), this);
 }
 
 
 void ASTURifleWeapon::InitFx()
 {
-    if(!MuzzleFXComponent)
+    if (!MuzzleFXComponent)
     {
         MuzzleFXComponent = SpawnMuzzleFX();
     }
-    if(!ShootAudioComponent)
+    if (!ShootAudioComponent)
     {
         ShootAudioComponent = UGameplayStatics::SpawnSoundAttached(ShootSound, WeaponMesh, MuzzleSocketName);
     }
     SetFXActive(true);
 }
 
-void ASTURifleWeapon::SetFXActive( bool IsActive) const
+void ASTURifleWeapon::SetFXActive(bool IsActive) const
 {
     if (MuzzleFXComponent)
     {
         MuzzleFXComponent->SetPaused(!IsActive);
         MuzzleFXComponent->SetVisibility(IsActive, true);
     }
-    if(ShootAudioComponent)
+    if (ShootAudioComponent)
     {
-        IsActive ? ShootAudioComponent->Play() : ShootAudioComponent->Stop();
+        ShootAudioComponent->SetPaused(!IsActive);
     }
 }
 
-void ASTURifleWeapon::SpawnTraceFX (const FVector& TraceStart, const FVector& TraceEnd)
+void ASTURifleWeapon::SpawnTraceFX(const FVector& TraceStart, const FVector& TraceEnd)
 {
     const auto TraceFXComponent = UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), TraceFX, TraceStart);
     if (TraceFXComponent)
@@ -133,4 +136,16 @@ AController* ASTURifleWeapon::GetController() const
 {
     const auto Pawn = Cast<APawn>(GetOwner());
     return Pawn ? Pawn->GetController() : nullptr;
+}
+
+void ASTURifleWeapon::Zoom(bool Enable)
+{
+    const auto PlayerController = Cast<ASTUPlayerController>(GetController());
+    if (!PlayerController || !PlayerController->PlayerCameraManager) return;
+
+    if(Enable)
+    {
+        FOVDefaultAngle = PlayerController->PlayerCameraManager->GetFOVAngle();
+    }
+    PlayerController->PlayerCameraManager->SetFOV(Enable ? FOVZoomAngle : FOVDefaultAngle);
 }

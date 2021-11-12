@@ -23,7 +23,7 @@ void USTUWeaponComponent::BeginPlay()
     checkf(WeaponData.Num() == WeaponNum, TEXT("Character can have only %i weapons"), WeaponNum);
 
     CurrentWeaponIndex = 0;
-    InitAnimation();
+    InitAnimations();
     SpawnWeapons();
     EquipWeapon(CurrentWeaponIndex);
 }
@@ -31,7 +31,7 @@ void USTUWeaponComponent::BeginPlay()
 void USTUWeaponComponent::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
     CurrentWeapon = nullptr;
-    for (auto Weapon : Weapons)
+    for (const auto Weapon : Weapons)
     {
         Weapon->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
         Weapon->Destroy();
@@ -44,14 +44,14 @@ void USTUWeaponComponent::EndPlay(const EEndPlayReason::Type EndPlayReason)
 void USTUWeaponComponent::SpawnWeapons()
 {
     ACharacter* Character = Cast<ACharacter>(GetOwner());
-    if (!Character && !GetWorld()) return;
+    if (!Character || !GetWorld()) return;
 
     for (auto OneWeaponData : WeaponData)
     {
         auto Weapon = GetWorld()->SpawnActor<ASTUBaseWeapon>(OneWeaponData.WeaponClass);
         if (!Weapon) continue;
 
-        Weapon->OnClipEmpty.AddUObject(this, &USTUWeaponComponent::OnEmptyClip);
+        Weapon->OnClipEmpty.AddUObject(this, &USTUWeaponComponent::OnClipEmpty);
         Weapon->SetOwner(Character);
         Weapons.Add(Weapon);
 
@@ -59,11 +59,11 @@ void USTUWeaponComponent::SpawnWeapons()
     }
 }
 
-void USTUWeaponComponent::AttachWeaponToSocket(ASTUBaseWeapon* Weapon, USceneComponent* SceneComponent, FName& SocketName)
+void USTUWeaponComponent::AttachWeaponToSocket(ASTUBaseWeapon* Weapon, USceneComponent* SceneComponent, const FName& SocketName)
 {
     if (!Weapon || !SceneComponent) return;
 
-    FAttachmentTransformRules AttachmentRules(EAttachmentRule::SnapToTarget, false);
+    const FAttachmentTransformRules AttachmentRules(EAttachmentRule::SnapToTarget, false);
     Weapon->AttachToComponent(SceneComponent, AttachmentRules, SocketName);
 }
 
@@ -80,6 +80,7 @@ void USTUWeaponComponent::EquipWeapon(int32 WeaponIndex)
     if (CurrentWeapon)
     {
         CurrentWeapon->StopFire();
+        CurrentWeapon->Zoom(false); 
         AttachWeaponToSocket(CurrentWeapon, Character->GetMesh(), WeaponArmorySocketName);
     }
 
@@ -110,7 +111,7 @@ void USTUWeaponComponent::StopFire()
 void USTUWeaponComponent::NextWeapon()
 {
     if (!CanEquip()) return;
-    CurrentWeaponIndex = (++CurrentWeaponIndex) % Weapons.Num();
+    CurrentWeaponIndex = (CurrentWeaponIndex + 1) % Weapons.Num();
     EquipWeapon(CurrentWeaponIndex);
 }
 
@@ -122,7 +123,7 @@ void USTUWeaponComponent::PlayAnimMontage(UAnimMontage* Animation)
     Character->PlayAnimMontage(Animation);
 }
 
-void USTUWeaponComponent::InitAnimation()
+void USTUWeaponComponent::InitAnimations()
 {
     auto EquipFinishedNotify = AnimUtils::FindNotifyByClass<USTUEquipFinishedAnimNotify>(EquipAnimMontage);
     if (EquipFinishedNotify)
@@ -151,7 +152,7 @@ void USTUWeaponComponent::InitAnimation()
 void USTUWeaponComponent::OnEquipFinished(USkeletalMeshComponent* MeshComp)
 {
     ACharacter* Character = Cast<ACharacter>(GetOwner());
-    if (!Character && Character->GetMesh() != MeshComp) return;
+    if (!Character || MeshComp != Character->GetMesh()) return;
 
     EquipAnimInProgress = false;
 }
@@ -159,7 +160,7 @@ void USTUWeaponComponent::OnEquipFinished(USkeletalMeshComponent* MeshComp)
 void USTUWeaponComponent::OnReloadFinished(USkeletalMeshComponent* MeshComp)
 {
     ACharacter* Character = Cast<ACharacter>(GetOwner());
-    if (!Character && Character->GetMesh() != MeshComp) return;
+    if (!Character || MeshComp != Character->GetMesh()) return;
 
     ReloadAnimInProgress = false;
 }
@@ -187,17 +188,23 @@ void USTUWeaponComponent::Reload()
     ChangeClip();
 }
 
-void USTUWeaponComponent::OnEmptyClip(ASTUBaseWeapon* AmmoEmptyWeapon)
+void USTUWeaponComponent::OnClipEmpty(ASTUBaseWeapon* ClipEmptyWeapon)
 {
-    if (!AmmoEmptyWeapon) return;
+    if (!ClipEmptyWeapon) return;
 
-    if (CurrentWeapon == AmmoEmptyWeapon)
+    if (CurrentWeapon == ClipEmptyWeapon)
     {
         ChangeClip();
     }
     else
     {
-        AmmoEmptyWeapon->ChangeClip();
+        for (const auto Weapon : Weapons)
+        {
+            if (Weapon == ClipEmptyWeapon)
+            {
+                Weapon->ChangeClip();
+            }
+        }
     }
 }
 
@@ -220,12 +227,11 @@ bool USTUWeaponComponent::GetCurrentWeaponUIData(FWeaponUIData& UIData) const
     return false;
 }
 
-bool USTUWeaponComponent::GetCurrentWeaponAmmoData(FAmmoData& AmmoData, FText& TextAmmoData) const
+bool USTUWeaponComponent::GetCurrentWeaponAmmoData(FAmmoData& AmmoData) const
 {
     if (CurrentWeapon)
     {
         AmmoData = CurrentWeapon->GetAmmoData();
-        TextAmmoData = CurrentWeapon->GetTextWeaponAmmoData();
         return true;
     }
     return false;
@@ -253,4 +259,12 @@ bool USTUWeaponComponent::NeedAmmo(TSubclassOf<ASTUBaseWeapon> WeaponType)
         }
     }
     return false;
+}
+
+void USTUWeaponComponent::Zoom(bool Enable)
+{
+    if(CurrentWeapon)
+    {
+        CurrentWeapon->Zoom(Enable);
+    }
 }

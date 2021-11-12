@@ -65,7 +65,7 @@ bool USTUPlayerHUBWidget::GetCurrentWeaponAmmoData(FAmmoData& AmmoData, FText& T
     const auto WeaponComponent = STUUtils::GetSTUPlayerComponent<USTUWeaponComponent>(GetOwningPlayerPawn());
     if (!WeaponComponent) return false;
 
-    return WeaponComponent->GetCurrentWeaponAmmoData(AmmoData, TextAmmoData);
+    return WeaponComponent->GetCurrentWeaponAmmoData(AmmoData);
 }
 
 bool USTUPlayerHUBWidget::IsPlayerAlive() const

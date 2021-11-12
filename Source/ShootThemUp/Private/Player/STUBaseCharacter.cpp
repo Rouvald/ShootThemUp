@@ -47,7 +47,6 @@ void ASTUBaseCharacter::Tick(float DeltaTime)
 }
 
 
-
 bool ASTUBaseCharacter::IsRunning() const
 {
     return false;
@@ -80,6 +79,7 @@ void ASTUBaseCharacter::OnDeath()
 
     GetCapsuleComponent()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
     WeaponComponent->StopFire();
+    WeaponComponent->Zoom(false);
 
     GetMesh()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
     GetMesh()->SetSimulatePhysics(true);
@@ -93,7 +93,7 @@ void ASTUBaseCharacter::OnGroundLanded(const FHitResult& Hit)
     if (FallVelocityZ < LandedDamageVelocity.X) return;
 
     const auto FallDamage = FMath::GetMappedRangeValueClamped(LandedDamageVelocity, LandedDamage, FallVelocityZ);
-    TakeDamage(FallDamage, FDamageEvent{}, nullptr, nullptr);
+    TakeDamage(FallDamage, FPointDamageEvent{}, nullptr, nullptr);
 
     UE_LOG(LogBaseCharacter, Display, TEXT("Player %s recived landed damage: %f"), *GetName(), FallDamage);
 }
@@ -104,4 +104,20 @@ void ASTUBaseCharacter::SetPlayerColor(const FLinearColor& TeamIDColor) const
     if (!MaterialInstance) return;
 
     MaterialInstance->SetVectorParameterValue(MaterialColorName, TeamIDColor);
+}
+
+void ASTUBaseCharacter::TurnOff()
+{
+    WeaponComponent->StopFire();
+    WeaponComponent->Zoom(false);
+    
+    Super::TurnOff();
+}
+
+void ASTUBaseCharacter::Reset()
+{
+    WeaponComponent->StopFire();
+    WeaponComponent->Zoom(false);
+    
+    Super::Reset();
 }

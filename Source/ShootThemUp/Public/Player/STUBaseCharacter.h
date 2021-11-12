@@ -51,6 +51,9 @@ protected:
 
     virtual void OnHealthChanged(float Health, float HealthDelta);
 
+    virtual void TurnOff() override;
+    virtual void Reset() override;
+
 public:
     virtual void Tick(float DeltaTime) override;
 

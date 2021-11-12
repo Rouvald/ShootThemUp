@@ -1,12 +1,10 @@
-// Shoot Them Up. All Rights Recerveds
+// Shoot Them Up Game, All Rights Reserved.
 
 #include "Weapon/STUBaseWeapon.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Engine/World.h"
-#include "DrawDebugHelpers.h"
-#include "GameFrameWork/Character.h"
-#include "GameFrameWork/Controller.h"
-#include "Kismet/GameplayStatics.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/Controller.h"
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraComponent.h"
 
@@ -23,23 +21,18 @@ ASTUBaseWeapon::ASTUBaseWeapon()
 void ASTUBaseWeapon::BeginPlay()
 {
     Super::BeginPlay();
+
     check(WeaponMesh);
-    checkf(DefaultAmmo.Bullets > 0, TEXT("Bullets can't be <= 0"));
-    checkf(DefaultAmmo.Clips > 0, TEXT("Clips can't be <= 0"));
+    checkf(DefaultAmmo.Bullets > 0, TEXT("Bullets count couldn't be less or equal zero"));
+    checkf(DefaultAmmo.Clips > 0, TEXT("Clips count couldn't be less or equal zero"));
     CurrentAmmo = DefaultAmmo;
 }
 
-void ASTUBaseWeapon::StartFire()
-{
-}
+void ASTUBaseWeapon::StartFire() {}
 
-void ASTUBaseWeapon::StopFire()
-{
-}
+void ASTUBaseWeapon::StopFire() {}
 
-void ASTUBaseWeapon::MakeShot()
-{
-}
+void ASTUBaseWeapon::MakeShot() {}
 
 bool ASTUBaseWeapon::GetPlayerViewPoint(FVector& ViewLocation, FRotator& ViewRotation) const
 {
@@ -55,14 +48,14 @@ bool ASTUBaseWeapon::GetPlayerViewPoint(FVector& ViewLocation, FRotator& ViewRot
     }
     else
     {
-        ViewLocation = GetMuzzleworldLocation();
+        ViewLocation = GetMuzzleWorldLocation();
         ViewRotation = WeaponMesh->GetSocketRotation(MuzzleSocketName);
     }
 
     return true;
 }
 
-FVector ASTUBaseWeapon::GetMuzzleworldLocation() const
+FVector ASTUBaseWeapon::GetMuzzleWorldLocation() const
 {
     return WeaponMesh->GetSocketLocation(MuzzleSocketName);
 }
@@ -71,11 +64,11 @@ bool ASTUBaseWeapon::GetTraceData(FVector& TraceStart, FVector& TraceEnd) const
 {
     FVector ViewLocation;
     FRotator ViewRotation;
-
     if (!GetPlayerViewPoint(ViewLocation, ViewRotation)) return false;
+
     TraceStart = ViewLocation;
-    const FVector ShootDiraction = ViewRotation.Vector();
-    TraceEnd = TraceStart + ShootDiraction * TraceMaxDistance;
+    const FVector ShootDirection = ViewRotation.Vector();
+    TraceEnd = TraceStart + ShootDirection * TraceMaxDistance;
     return true;
 }
 
@@ -84,8 +77,8 @@ void ASTUBaseWeapon::MakeHit(FHitResult& HitResult, const FVector& TraceStart, c
     if (!GetWorld()) return;
 
     FCollisionQueryParams CollisionParams;
-    CollisionParams.AddIgnoredActor(GetOwner());
     CollisionParams.bReturnPhysicalMaterial = true;
+    CollisionParams.AddIgnoredActor(GetOwner());
 
     GetWorld()->LineTraceSingleByChannel(HitResult, TraceStart, TraceEnd, ECollisionChannel::ECC_Visibility, CollisionParams);
 }
@@ -94,10 +87,10 @@ void ASTUBaseWeapon::DecreaseAmmo()
 {
     if (CurrentAmmo.Bullets == 0)
     {
-        UE_LOG(LogBaseWeapon, Warning, TEXT("Clip is Empty !!"));
+        UE_LOG(LogBaseWeapon, Warning, TEXT("Clip is empty"));
         return;
     }
-    --CurrentAmmo.Bullets;
+    CurrentAmmo.Bullets--;
 
     if (IsClipEmpty() && !IsAmmoEmpty())
     {
@@ -122,16 +115,16 @@ void ASTUBaseWeapon::ChangeClip()
     {
         if (CurrentAmmo.Clips == 0)
         {
-            UE_LOG(LogBaseWeapon, Warning, TEXT("No more Clips"));
+            UE_LOG(LogBaseWeapon, Warning, TEXT("No more clips"));
             return;
         }
-        --CurrentAmmo.Clips;
+        CurrentAmmo.Clips--;
     }
     CurrentAmmo.Bullets = DefaultAmmo.Bullets;
-    UE_LOG(LogBaseWeapon, Display, TEXT("====== Change Clip ====="));
+    // UE_LOG(LogBaseWeapon, Display, TEXT("------ Change Clip ------"));
 }
 
-bool ASTUBaseWeapon::CanReload()
+bool ASTUBaseWeapon::CanReload() const
 {
     return CurrentAmmo.Bullets < DefaultAmmo.Bullets && CurrentAmmo.Clips > 0;
 }
@@ -145,7 +138,7 @@ void ASTUBaseWeapon::LogAmmo()
 
 bool ASTUBaseWeapon::IsAmmoFull() const
 {
-    return CurrentAmmo.Clips == DefaultAmmo.Clips &&
+    return CurrentAmmo.Clips == DefaultAmmo.Clips &&  //
            CurrentAmmo.Bullets == DefaultAmmo.Bullets;
 }
 
@@ -175,8 +168,20 @@ bool ASTUBaseWeapon::TryToAddAmmo(int32 ClipsAmount)
     {
         CurrentAmmo.Bullets = DefaultAmmo.Bullets;
     }
+
     return true;
 }
+
+UNiagaraComponent* ASTUBaseWeapon::SpawnMuzzleFX()
+{
+    return UNiagaraFunctionLibrary::SpawnSystemAttached(MuzzleFX,  //
+        WeaponMesh,                                                //
+        MuzzleSocketName,                                          //
+        FVector::ZeroVector,                                       //
+        FRotator::ZeroRotator,                                     //
+        EAttachLocation::SnapToTarget, true);
+}
+
 
 FText ASTUBaseWeapon::GetTextWeaponAmmoData() const
 {
@@ -187,14 +192,4 @@ FText ASTUBaseWeapon::GetTextWeaponAmmoData() const
     }
     const auto MaxBullets = DefaultAmmo.Bullets;
     return FText::FromString(WeaponAmmoData + FString::FromInt(MaxBullets * CurrentAmmo.Clips));
-}
-
-UNiagaraComponent* ASTUBaseWeapon::SpawnMuzzleFX()
-{
-    return UNiagaraFunctionLibrary::SpawnSystemAttached(MuzzleFX, //
-        WeaponMesh,                                               //
-        MuzzleSocketName,                                         //
-        FVector::ZeroVector,                                      //
-        FRotator::ZeroRotator,                                    //
-        EAttachLocation::SnapToTarget, true);
 }

@@ -24,7 +24,9 @@ public:
     virtual void StartFire() override;
     virtual void StopFire() override;
 
-    void BeginPlay() override;;
+    void BeginPlay() override;
+
+    virtual void Zoom(bool Enable) override;
 
 protected:
     UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon")
@@ -44,6 +46,9 @@ protected:
     
     UPROPERTY(VisibleAnywhere, Category = "VFX")
     USTUWeaponFXComponent* WeaponFXComponent;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "")
+    float FOVZoomAngle = 50.0f;
     
     virtual void MakeShot() override;
     virtual bool GetTraceData(FVector& TraceStart, FVector& TraceEnd) const override;
@@ -66,4 +71,6 @@ private:
     void SpawnTraceFX (const FVector& TraceStart, const FVector& TraceEnd);
 
     AController* GetController() const;
+
+    float FOVDefaultAngle = 90.0f;
 };

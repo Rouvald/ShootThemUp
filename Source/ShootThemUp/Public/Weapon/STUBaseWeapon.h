@@ -26,16 +26,17 @@ public:
     virtual void StopFire();
 
     void ChangeClip();
-    bool CanReload();
+    bool CanReload() const;
     bool IsAmmoEmpty() const;
 
     FWeaponUIData GetUIData() const { return UIData; }
     FAmmoData GetAmmoData() const { return CurrentAmmo; }
 
     bool TryToAddAmmo(int32 ClipsAmount);
-    
     FText GetTextWeaponAmmoData() const;
     bool IsAmmoFull() const;
+
+    virtual void Zoom(bool Enable) {}
 
 protected:
     UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Weapon")
@@ -65,7 +66,7 @@ protected:
     virtual bool GetTraceData(FVector& TraceStart, FVector& TraceEnd) const;
     
     bool GetPlayerViewPoint(FVector& ViewLocation, FRotator& ViewRotation) const;
-    FVector GetMuzzleworldLocation() const;
+    FVector GetMuzzleWorldLocation() const;
     void MakeHit(FHitResult& HitResult, const FVector& TraceStart, const FVector& TraceEnd);
     //void MakeDamage(FHitResult& HitResult);
 
